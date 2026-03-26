@@ -1,2 +1,2 @@
 # gm-web
-gm website
+gm landing website
