@@ -4,26 +4,28 @@
   --font-sans: var(--font-inter);
   --font-mono: var(--font-space-grotesk);
 
-  /* Obsidian Palette Colors */
-  --color-surface: #0e0e0e;
+  /* Gold & Stealth Palette */
+  --color-surface: #000000;
   --color-surface-container-lowest: #000000;
-  --color-surface-container-low: #131313;
-  --color-surface-container: #1a1919;
-  --color-surface-container-high: #201f1f;
-  --color-surface-container-highest: #262626;
-  --color-surface-bright: #2c2c2c;
-  --color-primary: #6dddff;
-  --color-primary-container: #00d2fd;
-  --color-primary-dim: #00c3eb;
-  --color-primary-fixed: #00d2fd;
-  --color-on-primary-fixed: #002c37;
-  --color-secondary: #d674ff;
-  --color-tertiary: #b1ffce;
-  --color-error-dim: #d7383b;
-  --color-outline: #777575;
-  --color-outline-variant: #494847;
-  --color-on-surface: #ffffff;
-  --color-on-surface-variant: #adaaaa;
+  --color-surface-container-low: #080808;
+  --color-surface-container: #121212;
+  --color-surface-container-high: #1a1a1a;
+  --color-surface-container-highest: #222222;
+  --color-surface-bright: #2a2a2a;
+  
+  --color-primary: #D4AF37; /* Metallic Gold */
+  --color-primary-container: #FFD700; /* Bright Gold */
+  --color-primary-dim: #B8860B; /* Dark Goldenrod */
+  --color-primary-fixed: #D4AF37;
+  --color-on-primary-fixed: #000000;
+  
+  --color-secondary: #F5F5F7; /* White / Silver */
+  --color-tertiary: #A0A0A0; /* Mid Grey */
+  --color-error-dim: #FF4D4D;
+  --color-outline: #333333;
+  --color-outline-variant: #1a1a1a;
+  --color-on-surface: #FFFFFF;
+  --color-on-surface-variant: #A0A0A0;
 
   --color-background: var(--color-surface);
   --color-foreground: var(--color-on-surface);
@@ -51,19 +53,19 @@ body {
 }
 
 @utility premium-gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-on-surface-variant;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-primary to-on-surface-variant;
 }
 
 @utility text-glow-primary {
-  text-shadow: 0 0 24px rgba(109, 221, 255, 0.4);
+  text-shadow: 0 0 24px rgba(212, 175, 55, 0.4);
 }
 
 @utility button-primary {
-  @apply flex items-center justify-center rounded-2xl bg-gradient-to-r from-primary-container to-primary text-on-primary-fixed font-semibold px-6 py-3 transition-transform hover:scale-105 active:scale-95 shadow-[0_0_8px_rgba(109,221,255,0.2)] hover:shadow-[0_0_24px_rgba(109,221,255,0.4)];
+  @apply flex items-center justify-center rounded-2xl bg-gradient-to-r from-primary-dim via-primary to-primary-container text-on-primary-fixed font-bold px-6 py-3 transition-all hover:scale-105 active:scale-95 shadow-[0_0_8px_rgba(212,175,55,0.2)] hover:shadow-[0_0_32px_rgba(212,175,55,0.5)];
 }
 
 @utility button-secondary {
-  @apply flex items-center justify-center rounded-2xl bg-transparent ghost-border text-on-surface font-semibold px-6 py-3 transition-colors hover:bg-on-surface/5 active:bg-on-surface/10;
+  @apply flex items-center justify-center rounded-2xl bg-transparent ghost-border text-on-surface font-semibold px-6 py-3 transition-colors hover:bg-white/5 active:bg-white/10;
 }
 
 /* Animations */

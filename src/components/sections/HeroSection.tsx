@@ -22,10 +22,10 @@ export default function HeroSection() {
         >
           {/* AI Status Chip */}
           <div className="flex items-center gap-2 px-4 py-2 rounded-full surface-container-high ghost-border backdrop-blur-md mb-8">
-            <div className="w-2 h-2 rounded-full bg-secondary animate-pulse-ring relative">
-              <span className="absolute inset-0 rounded-full bg-secondary animate-ping opacity-75"></span>
+            <div className="w-2 h-2 rounded-full bg-primary animate-pulse-ring relative">
+              <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"></span>
             </div>
-            <span className="text-secondary font-mono text-xs font-bold uppercase tracking-wider">
+            <span className="text-primary font-mono text-xs font-bold uppercase tracking-wider">
               AI Managed Stability Engine Active
             </span>
           </div>

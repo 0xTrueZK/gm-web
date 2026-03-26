@@ -78,8 +78,8 @@ export default function AddressableEconomy() {
               </p>
             </div>
             <div className="mt-auto relative w-12 h-12 flex justify-center items-center">
-              <div className="absolute inset-0 border-2 border-tertiary/30 rounded-full border-t-tertiary animate-spin" style={{ animationDuration: '3s' }} />
-              <div className="w-2 h-2 rounded-full bg-tertiary shadow-[0_0_10px_#b1ffce]" />
+              <div className="absolute inset-0 border-2 border-primary/30 rounded-full border-t-primary animate-spin" style={{ animationDuration: '3s' }} />
+              <div className="w-2 h-2 rounded-full bg-primary shadow-[0_0_10px_#D4AF37]" />
             </div>
           </motion.div>
         </motion.div>

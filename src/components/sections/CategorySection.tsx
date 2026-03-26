@@ -44,13 +44,13 @@ export default function CategorySection() {
             <span className="text-on-surface-variant/70 text-sm mt-4 font-mono uppercase tracking-widest text-[10px]">Result: Manual FX + Liquidity Fragmentation</span>
           </div>
 
-          <div className="relative glass-panel rounded-3xl p-8 flex flex-col justify-between mt-4 border border-primary/30 shadow-[0_0_40px_rgba(109,221,255,0.15)] group">
+          <div className="relative glass-panel rounded-3xl p-8 flex flex-col justify-between mt-4 border border-primary/30 shadow-[0_0_40px_rgba(212,175,55,0.15)] group">
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
             <div className="z-10 flex flex-col gap-1 mb-6">
               <span className="text-on-surface font-bold text-2xl tracking-tight flex items-center gap-2">
                 With GM
-                <div className="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#6dddff]" />
+                <div className="w-2 h-2 bg-primary rounded-full shadow-[0_0_10px_#D4AF37]" />
               </span>
               <span className="text-primary text-sm font-medium tracking-wide">Local Fiat Purchasing Power Everywhere</span>
             </div>

@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Global Money — GM",
+  title: "Global Money",
   description: "GM is the first programmable, AI-managed, multi-fiat stablecoin, a universal monetary unit designed for both humans and autonomous systems.",
 };
 

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ProgrammableFuture() {
   return (
-    <section className="relative w-full py-24 bg-surface flex flex-col items-center text-center overflow-hidden">
+    <section id="programmable" className="relative w-full py-24 bg-surface flex flex-col items-center text-center overflow-hidden">
       <div className="container mx-auto max-w-7xl px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

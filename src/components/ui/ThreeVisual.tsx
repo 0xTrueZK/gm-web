@@ -19,8 +19,8 @@ function RotatingCube() {
     <Float speed={2} rotationIntensity={0.5} floatIntensity={0.5}>
       <Box ref={meshRef} args={[0.5, 0.5, 0.5]}>
         <meshPhysicalMaterial 
-          color="#00d2fd" 
-          emissive="#00d2fd"
+          color="#D4AF37" 
+          emissive="#D4AF37"
           emissiveIntensity={0.5}
           wireframe={true}
           transparent
@@ -28,16 +28,16 @@ function RotatingCube() {
         />
       </Box>
       <Box args={[0.4, 0.4, 0.4]}>
-        <meshBasicMaterial color="#6dddff" transparent opacity={0.3} />
+        <meshBasicMaterial color="#FFFFFF" transparent opacity={0.3} />
       </Box>
     </Float>
   );
 }
 
 const FIATS = [
-  { name: "USD", color: "#b1ffce", angle: 0 },
-  { name: "JPY", color: "#6dddff", angle: (Math.PI * 2) / 3 },
-  { name: "EUR", color: "#d674ff", angle: ((Math.PI * 2) / 3) * 2 },
+  { name: "USD", color: "#FFFFFF", angle: 0 },
+  { name: "JPY", color: "#D4AF37", angle: (Math.PI * 2) / 3 },
+  { name: "EUR", color: "#A0A0A0", angle: ((Math.PI * 2) / 3) * 2 },
 ];
 
 function ConcentricSystem() {
@@ -61,23 +61,23 @@ function ConcentricSystem() {
       
       <mesh position={[0,0,-0.1]}>
         <circleGeometry args={[1, 64]} />
-        <meshBasicMaterial color="#0e0e0e" />
+        <meshBasicMaterial color="#000000" />
       </mesh>
       
       <mesh position={[0,0,-0.05]}>
         <circleGeometry args={[1.2, 64]} />
-        <meshBasicMaterial color="#00d2fd" transparent opacity={0.1} />
+        <meshBasicMaterial color="#D4AF37" transparent opacity={0.15} />
       </mesh>
 
       <group ref={innerRingRef}>
         <Torus args={[innerRadius, 0.01, 16, 100]}>
-          <meshBasicMaterial color="#6dddff" transparent opacity={0.3} />
+          <meshBasicMaterial color="#D4AF37" transparent opacity={0.4} />
         </Torus>
       </group>
 
       <group ref={outerRingRef}>
         <Torus args={[outerRadius, 0.01, 16, 100]}>
-          <meshBasicMaterial color="#494847" />
+          <meshBasicMaterial color="#222222" />
         </Torus>
         
         {FIATS.map((fiat) => {
@@ -87,11 +87,11 @@ function ConcentricSystem() {
             <group key={fiat.name} position={[x, y, 0]}>
               <mesh>
                 <circleGeometry args={[0.3, 32]} />
-                <meshBasicMaterial color="#1a1919" />
+                <meshBasicMaterial color="#121212" />
               </mesh>
               <mesh position={[0,0,-0.01]}>
                 <circleGeometry args={[0.32, 32]} />
-                <meshBasicMaterial color="#262626" />
+                <meshBasicMaterial color="#1a1a1a" />
               </mesh>
               <Text
                 position={[0, 0, 0.01]}
@@ -123,9 +123,9 @@ export default function ThreeVisual() {
         gl={{ powerPreference: "high-performance", antialias: false }}
       >
         <Suspense fallback={null}>
-          <fog attach="fog" args={['#0e0e0e', 5, 20]} />
+          <fog attach="fog" args={['#000000', 5, 20]} />
           <ambientLight intensity={0.5} />
-          <directionalLight position={[0, 5, 5]} intensity={1.5} color="#6dddff" />
+          <directionalLight position={[0, 5, 5]} intensity={1.5} color="#D4AF37" />
           
           <Stars radius={100} depth={50} count={1000} factor={4} saturation={0} fade speed={1} />
           
